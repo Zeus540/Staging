@@ -207,7 +207,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var ClientFeedback = function ClientFeedback() {
-  var template = "\n    <div class=\"ClientFeedback\">\n\n    <div class=\"ClientCard\">\n    <div>\n    <h1>CLIENT TESTAMONIALS</h1>\n    </div>\n    <div>\n    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquid saepe modi nisi alias, omnis adipisci itaque? Eius amet ratione repellendus expedita officiis illo et assumenda consequuntur id incidunt. Provident, impedit error doloribus eius sint eligendi molestiae. Rerum, laboriosam vitae inventore id magni hic! A minus doloribus distinctio? Sit, rem.</p>\n     <br>\n    <p>NAME & SURNAME</p>\n   \n    </div>\n    </div>\n\n    </div>\n  ";
+  var template = "\n    <div class=\"ClientFeedback\">\n\n    <div class=\"ClientCard\">\n    <div>\n    <h1>CLIENT TESTAMONIALS</h1>\n    </div>\n    <div>\n    <p class=\"clear\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquid saepe modi nisi alias, omnis adipisci itaque? Eius amet ratione repellendus expedita officiis illo et assumenda consequuntur id incidunt. Provident, impedit error doloribus eius sint eligendi molestiae. Rerum, laboriosam vitae inventore id magni hic! A minus doloribus distinctio? Sit, rem.</p>\n     <br>\n    <p class=\"name\">BOB ROSS</p>\n   \n    </div>\n    </div>\n\n    </div>\n  ";
   return template;
 };
 

@@ -18,6 +18,9 @@ flex-direction: column-reverse;
 			color: #e6968a;
 			letter-spacing: 4px;
 			font-weight: 800;
+			@media (min-width:1px) and (max-width:425px){
+				font-size: 10vw;
+				}
 		}
 		@media (min-width:1px) and (max-width:425px){
 			width: 100%!important;
@@ -25,19 +28,38 @@ flex-direction: column-reverse;
 	}
 	.rightPackages{
 		width: 50%;
+		
 		@media (min-width:1px) and (max-width:425px){
 			width: 100%;
+			}
+			h1{
+				margin: 20px;
+				width: 80%;
+				letter-spacing: 4px;
+				@media (min-width:1px) and (max-width:425px){
+					font-size: 6vw;
+					}
 			}
 			p{
 				width: 75%;
 				line-height: 30px;
 				letter-spacing: 2px;
+				@media (min-width:1px) and (max-width:425px){
+					font-size: 4vw;
+					width: 80%;
+					line-height: 25px;
+					text-align: center;
+					}
 			}
 			img{
 				width: 15%;
+				@media (min-width:1px) and (max-width:425px){
+					width: 33%;
+					}
 			}
 	}
 	.rightInner1Packages{
+		padding: 50px 0px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -47,14 +69,11 @@ flex-direction: column-reverse;
 		@media (min-width:1px) and (max-width:425px){
 			height: 100%!important;
 			}
-		h1{
-			margin: 20px;
-			width: 80%;
-			letter-spacing: 4px;
-		}
+	
 		
 	}
 	.rightInner2Packages{
+		padding: 50px 0px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -64,14 +83,11 @@ flex-direction: column-reverse;
 		@media (min-width:1px) and (max-width:425px){
 			height: 100%!important;
 			}
-		h1{
-			width: 80%;
-			margin: 20px;
-			letter-spacing: 4px;
-		}
+	
 		
 	}
 	.rightInner3Packages{
+		padding: 50px 0px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -81,12 +97,7 @@ flex-direction: column-reverse;
 		@media (min-width:1px) and (max-width:425px){
 			height: 100%!important;
 			}
-		h1{
-			width: 80%;
-			margin: 20px;
-			letter-spacing: 4px;
-		}
-		
+	
 	}
 }
 
