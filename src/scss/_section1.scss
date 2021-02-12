@@ -1,0 +1,148 @@
+.containerSection1{
+display: flex;
+height: 100%;
+text-align: center;
+overflow: hidden;
+@media (min-width:1px) and (max-width:425px){
+	width: 100%!important;
+	flex-direction: column;
+	}
+	.left{
+		width: 50%;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0!important;
+		
+		background-color: floralwhite;
+		@media (min-width:1px) and (max-width:425px){
+			width: 100%!important;
+			}
+			h1{
+				font-size: 4vw;
+				color: #e6968a;
+				letter-spacing: 4px;
+				font-weight: bold;
+			}
+	}
+	.right{
+		width: 50%;
+	
+		h1{
+			font-size: 2vw;
+			margin: 20px;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+		}
+		@media (min-width:1px) and (max-width:425px){
+			width: 100%!important;
+			}
+		
+	.rightInner1{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		background-color: #e9bcb5;
+	
+		.imgHolder{
+			width: 80%;
+		
+		    background: #fcf2e8;
+    		padding: 28px;
+
+			img{
+				width: 100%;
+			}
+		}
+	
+		p{
+			width: 80%;
+		}
+	}
+	
+	.rightInner3{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		background-color: #e2a49b;
+	
+		.imgHolder{
+			width: 50%;
+		
+		    background: #fcf2e8;
+    		padding: 28px;
+	
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.rightInner4{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		background-color: #e9bcb5;
+	
+		.imgHolder{
+			width: 50%;
+		
+		    background: #fcf2e8;
+    		padding: 28px;
+	
+			img{
+				width: 100%;
+			}
+		}
+	}
+
+
+	.rightInner5{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		background-color: #e2a49b;
+	
+		.imgHolder{
+			width: 50%;
+		
+		    background: #fcf2e8;
+    		padding: 28px;
+	
+			img{
+				width: 100%;
+			}
+		}
+	}
+
+	.rightInner6{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		background-color: #e9bcb5;
+	
+		.imgHolder{
+			width: 50%;
+		
+		    background: #fcf2e8;
+    		padding: 28px;
+	
+			img{
+				width: 100%;
+			}
+		}
+	}
+
+
+	}
+}
