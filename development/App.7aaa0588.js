@@ -117,17 +117,13 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../src/assets/images/g1.jpg":[function(require,module,exports) {
-module.exports = "/g1.6e6a3265.jpg";
-},{}],"../src/assets/images/g3.jpg":[function(require,module,exports) {
-module.exports = "/g3.3cd85709.jpg";
-},{}],"../src/assets/images/babyshower.jpg":[function(require,module,exports) {
-module.exports = "/babyshower.98166445.jpg";
-},{}],"../src/assets/images/graduation.jpg":[function(require,module,exports) {
-module.exports = "/graduation.a563234e.jpg";
-},{}],"../src/assets/images/proposal.jpg":[function(require,module,exports) {
-module.exports = "/proposal.6d65d516.jpg";
-},{}],"../src/components/Welcome.js":[function(require,module,exports) {
+})({"../src/assets/images/slide.png":[function(require,module,exports) {
+module.exports = "/slide.c34d815c.png";
+},{}],"../src/assets/images/base.png":[function(require,module,exports) {
+module.exports = "/base.025808db.png";
+},{}],"../src/assets/images/mag.png":[function(require,module,exports) {
+module.exports = "/mag.9b5d17f0.png";
+},{}],"../src/components/Header.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -135,47 +131,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _g = _interopRequireDefault(require("../assets/images/g1.jpg"));
+var _slide = _interopRequireDefault(require("../assets/images/slide.png"));
 
-var _g2 = _interopRequireDefault(require("../assets/images/g3.jpg"));
+var _base = _interopRequireDefault(require("../assets/images/base.png"));
 
-var _babyshower = _interopRequireDefault(require("../assets/images/babyshower.jpg"));
-
-var _graduation = _interopRequireDefault(require("../assets/images/graduation.jpg"));
-
-var _proposal = _interopRequireDefault(require("../assets/images/proposal.jpg"));
+var _mag = _interopRequireDefault(require("../assets/images/mag.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Welcome = function Welcome() {
-  var template = "\n    <div class=\"containerSection1\">\n\n      <div class=\"left\">\n        <div>\n        <h1>\n        EVENTS </h1>\n    \n        </div>\n      </div>\n\n      <div class=\"right\">\n\n      <div class=\"rightInner1\">\n      <h1>\n      Engagements</h1>\n      <div class=\"imgHolder\">\n      <img src=".concat(_g2.default, "></img>\n     <a href=\"../../public/gallery.html\"></a>\n      </div>\n     \n      \n \n      </div>\n\n   \n      <div class=\"rightInner3\">\n      <h1>\n      BIRTHDAYS </h1>\n      <div class=\"imgHolder\">\n      <img src=").concat(_g.default, "></img>\n      </div>\n      </div>\n\n      <div class=\"rightInner4\">\n      <h1>\n      BABY SHOWERS </h1>\n      <div class=\"imgHolder\">\n      <img src=").concat(_babyshower.default, "></img>\n      </div>\n      </div>\n\n      <div class=\"rightInner5\">\n      <h1>\n      Graduation Celebrations </h1>\n      <div class=\"imgHolder\">\n      <img src=").concat(_graduation.default, "></img>\n      </div>\n      </div>\n\n      <div class=\"rightInner6\">\n      <h1>\n      Proposals & Engagements</h1>\n      <div class=\"imgHolder\">\n      <img src=").concat(_proposal.default, "></img>\n      </div>\n      </div>\n      </div>\n\n    </div>\n  ");
-  return template;
-};
-
-var _default = Welcome;
-exports.default = _default;
-},{"../assets/images/g1.jpg":"../src/assets/images/g1.jpg","../assets/images/g3.jpg":"../src/assets/images/g3.jpg","../assets/images/babyshower.jpg":"../src/assets/images/babyshower.jpg","../assets/images/graduation.jpg":"../src/assets/images/graduation.jpg","../assets/images/proposal.jpg":"../src/assets/images/proposal.jpg"}],"../src/components/Header.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
 var Header = function Header() {
-  var template = "\n    <div class=\"container\">\n\n   header\n\n    </div>\n  ";
+  var template = "\n\n    <div class=\"container\">\n\n\n  <h1 class=\"Heading\">GLOCK 19</h1>\n    <div class=\"glock\">\n      <div id=\"slideHolder\" >\n    <img src=".concat(_slide.default, "  class=\"slide piece\"  alt=\"slide\">\n  </div>\n      <img src=\"https://assets.codepen.io/16327/teardown-barrel.png\" class=\"barrel piece\" alt=\"barrel\">\n      <img src=\"https://assets.codepen.io/16327/teardown-spring.png\" class=\"spring piece\" alt=\"spring\">\n      <img src=").concat(_base.default, " class=\"base piece\" alt=\"base\">\n    <div id=\"magholder\">\n      <img src=").concat(_mag.default, " class=\"mag piece\" alt=\"mag\">\n    </div>\n    </div>\n    </div>\n  <div class=\"btngrp\">\n    <button id=\"break\"><h1>Strip</h1></button>\n    <button id=\"reload\"><h1>LOAD</h1></button>\n\n    <button id=\"Assemble\"><h1>ASSEMBLE</h1></button>\n    <button id=\"blue\"></button>\n    <button id=\"black\"></button>\n  </div>\n  ");
   return template;
 };
 
 var _default = Header;
 exports.default = _default;
-},{}],"../src/assets/images/1.png":[function(require,module,exports) {
-module.exports = "/1.0d91c6a6.png";
-},{}],"../src/assets/images/2.png":[function(require,module,exports) {
-module.exports = "/2.b05505dc.png";
-},{}],"../src/assets/images/3.png":[function(require,module,exports) {
-module.exports = "/3.88df389c.png";
-},{}],"../src/components/Packages.js":[function(require,module,exports) {
+},{"../assets/images/slide.png":"../src/assets/images/slide.png","../assets/images/base.png":"../src/assets/images/base.png","../assets/images/mag.png":"../src/assets/images/mag.png"}],"../src/components/Section1.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -183,50 +154,12 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _ = _interopRequireDefault(require("../assets/images/1.png"));
-
-var _2 = _interopRequireDefault(require("../assets/images/2.png"));
-
-var _3 = _interopRequireDefault(require("../assets/images/3.png"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Packages = function Packages() {
-  var template = "\n    <div class=\"containerPackages\">\n\n     \n\n      <div class=\"rightPackages\">\n\n      <div class=\"rightInner1Packages\">\n      <h1>Blooming<br> Bachelorette</h1>\n      <img src=".concat(_.default, "></img>\n      <h1>Officially a fianc\xE9<br>Let\u2019s get this party started!</h1>\n      <p>Before a bachelorette blooms into the beautiful bride, a celebration must be had. A bachelorette party is a very special moment in every woman\u2019s life. We celebrate the woman you were, and are becoming. It\u2019s a coming together of your nearest and dearest to relax, let go of the pre-wedding stress and just have some FUN. Whether it\u2019s champagne and massages, or a night out on the town, we can help your entourage make it a night to remember.</p>\n      </div>\n    \n      <div class=\"rightInner2Packages\">\n      <h1>Queen<br> Protea</h1>\n      <img src=").concat(_2.default, "></img>\n      <h1>You said YES!<br> Now where to begin?</h1>\n      <p>The Queen Protea experience is one of our most sought after and extensive packages. This is for the couple who need our assistance from the word go. We\u2019re talking setting budgets, creating invitations and navigating the fine art of table seating, right until we see that magnificent moment where you dance the night away as a married couple. From planning your special day and any events leading up to the day, to coordinating with third-party suppliers, as well as on the day coordination \u2013 rest comfortably knowing you\u2019re in good hands.</p>\n      </div>\n\n      <div class=\"rightInner3Packages\">\n      <h1>Delicate<br> Daisy</h1>\n      <img src=").concat(_3.default, "></img>\n      <h1>The A Team\u2019s <br> very own support team</h1>\n      <p>The Delicate Daisy experience is for the couple who are on it. Your wedding planning process is well underway, with your venue and service providers booked and ready to go. This is where we step in. We would meet a month before your wedding date for a complete hand-over, ensuring you and your fianc\xE9 can kick back, relax and enjoy the next month, as we smooth-sail right into your wedding day.</p>\n      </div>\n\n      </div>\n\n      <div class=\"leftPackages\">\n        <h1>PACKAGES</h1>\n      </div>\n    </div>\n  ");
+var Section1 = function Section1() {
+  var template = "\n    <div class=\"Section1\">\n\n  \n   \n    </div>\n  ";
   return template;
 };
 
-var _default = Packages;
-exports.default = _default;
-},{"../assets/images/1.png":"../src/assets/images/1.png","../assets/images/2.png":"../src/assets/images/2.png","../assets/images/3.png":"../src/assets/images/3.png"}],"../src/components/ClientFeedback.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var ClientFeedback = function ClientFeedback() {
-  var template = "\n    <div class=\"ClientFeedback\">\n\n    <div class=\"ClientCard\">\n    <div>\n    <h1>CLIENT TESTAMONIALS</h1>\n    </div>\n    <div>\n    <p class=\"clear\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquid saepe modi nisi alias, omnis adipisci itaque? Eius amet ratione repellendus expedita officiis illo et assumenda consequuntur id incidunt. Provident, impedit error doloribus eius sint eligendi molestiae. Rerum, laboriosam vitae inventore id magni hic! A minus doloribus distinctio? Sit, rem.</p>\n     <br>\n    <p class=\"name\">BOB ROSS</p>\n   \n    </div>\n    </div>\n\n    </div>\n  ";
-  return template;
-};
-
-var _default = ClientFeedback;
-exports.default = _default;
-},{}],"../src/components/Footer.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var Footer = function Footer() {
-  var template = "\n    <div class=\"container\">\n\n    Footer\n\n    </div>\n  ";
-  return template;
-};
-
-var _default = Footer;
+var _default = Section1;
 exports.default = _default;
 },{}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
@@ -300,29 +233,23 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/App.js":[function(require,module,exports) {
+},{"./../assets/images/splash.png":[["splash.8ad5f3c2.png","../src/assets/images/splash.png"],"../src/assets/images/splash.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/App.js":[function(require,module,exports) {
 "use strict";
-
-var _Welcome = _interopRequireDefault(require("./components/Welcome"));
 
 var _Header = _interopRequireDefault(require("./components/Header"));
 
-var _Packages = _interopRequireDefault(require("./components/Packages"));
-
-var _ClientFeedback = _interopRequireDefault(require("./components/ClientFeedback"));
-
-var _Footer = _interopRequireDefault(require("./components/Footer"));
+var _Section = _interopRequireDefault(require("./components/Section1"));
 
 require("./scss/app.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App() {
-  document.getElementById("root").innerHTML = "\n  ".concat((0, _Header.default)(), "\n\n  ").concat((0, _Packages.default)(), "\n  ").concat((0, _Welcome.default)(), "\n  ").concat((0, _ClientFeedback.default)(), "\n\n  ");
+  document.getElementById("root").innerHTML = "\n  ".concat((0, _Header.default)(), "\n\n  \n  ");
 };
 
 App();
-},{"./components/Welcome":"../src/components/Welcome.js","./components/Header":"../src/components/Header.js","./components/Packages":"../src/components/Packages.js","./components/ClientFeedback":"../src/components/ClientFeedback.js","./components/Footer":"../src/components/Footer.js","./scss/app.scss":"../src/scss/app.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./components/Header":"../src/components/Header.js","./components/Section1":"../src/components/Section1.js","./scss/app.scss":"../src/scss/app.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -350,7 +277,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42911" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43809" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,47 +1,101 @@
-document.addEventListener('DOMContentLoaded', init);
+import { gsap } from "gsap";
+import { Draggable } from "gsap/Draggable";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import { TextPlugin } from "gsap/TextPlugin";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import bluemag from '../assets/images/bluemag.png'
+import blueslide from '../assets/images/blueslide.png'
+import blackmag from '../assets/images/mag.png'
+import blackslide from '../assets/images/slide.png'
+gsap.registerPlugin(Draggable, MotionPathPlugin, TextPlugin, ScrollToPlugin, ScrollTrigger);
 
-function init(){
+var Break = document.getElementById('break')
+var Assemble = document.getElementById('Assemble')
+var reload = document.getElementById('reload')
+var Blue = document.getElementById('blue')
+var Black = document.getElementById('black')
+var  State = true;
 
-  let query = window.matchMedia("(min-width:426px)")
-  if (query.matches) {
-    function splitScroll(){
 
-      const controller = new ScrollMagic.Controller();
-    
-      new ScrollMagic.Scene({
-          duration: '400%',
-          triggerElement: '.left',
-          triggerHook: 0
-      })
-      .setPin('.left')
-      .addTo(controller)
-      .addIndicators();
-    }
-         
-    splitScroll()
-    
-    
-    function splitScroll2(){
-    
-      const controller = new ScrollMagic.Controller();
-    
-      new ScrollMagic.Scene({
-          duration: '200%',
-          triggerElement: '.leftPackages',
-          triggerHook: 0
-      })
-      .setPin('.leftPackages')
-      .addTo(controller)
-      .addIndicators();
-    }
-         
-    splitScroll2()
-    
-    console.log('yes')
 
-  } else {
-    console.log('no')
-  }
+Break.onclick = () =>{
+ 
+  gsap.to(".slide",  { yPercent:  -135 ,duration: 0.5,})
+
+  gsap.to(".barrel", { yPercent: -115 ,duration: 0.5, })
+ 
+  gsap.to(".spring", { yPercent: -100 ,duration: 0.5,})
+
+  gsap.to(".base",   { yPercent: 0 ,duration: 0.5,})
+
+  gsap.to(".mag",   { yPercent: -50 ,duration: 0.5,})
+
+  gsap.to(".mag",   { xPercent: 180 ,duration: 0.5,})
+
+  gsap.to(".glock",   { yPercent: -40 ,duration: 0.5,})
+
+  State = false;
 }
 
 
+Assemble.onclick = () =>{
+  
+  gsap.to(".slide",  { yPercent:  0 ,duration: 0.5,})
+  gsap.to(".barrel", { yPercent: 0 ,duration: 0.5,})
+  gsap.to(".spring", { yPercent: 0 ,duration: 0.5,})
+  gsap.to(".base",   { yPercent: 0 ,duration: 0.5,})
+  gsap.to(".mag",   { yPercent: 0 ,duration: 0.5,})
+  gsap.to(".mag",   { xPercent: 0 ,duration: 0.5,})
+  gsap.to(".glock",   { yPercent:  -50  ,duration: 0.5,})
+
+  State = true;
+}
+
+
+
+reload.onclick = () =>{
+
+if (  State === true) {
+  gsap.from(".slide",  { xPercent: 20,duration: 0.5 })
+  gsap.from(".barrel", { xPercent: 31,duration: 0.5})
+  gsap.from(".spring", { xPercent: 40,duration: 0.5 })
+} else {
+  alert('Assemble first')
+}
+
+}
+
+Blue.onclick = () =>{
+ 
+  if ( State === true) {
+    document.getElementById('slideHolder').innerHTML = `
+
+    <img src=${blueslide}  class="slide piece"  alt="slide">
+    `
+    document.getElementById('magholder').innerHTML = `
+
+    <img src=${bluemag}  class="mag piece" alt="mag">
+    `
+  } else {
+    alert('Assemble first')
+  }
+
+}
+
+Black.onclick = () =>{
+ 
+  if ( State === true) {
+    document.getElementById('slideHolder').innerHTML = `
+
+    <img src=${blackslide}  class="slide piece"  alt="slide">
+    `
+    document.getElementById('magholder').innerHTML = `
+
+    <img src=${blackmag}  class="mag piece" alt="mag">
+    `
+  } else {
+    alert('Assemble first')
+  }
+
+}
