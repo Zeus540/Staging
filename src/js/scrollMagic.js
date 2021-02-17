@@ -33,7 +33,7 @@ Break.onclick = () =>{
 
   gsap.to(".mag",   { xPercent: 180 ,duration: 0.5,})
 
-  gsap.to(".glock",   { yPercent: 20 ,duration: 0.5,})
+  gsap.to(".glock",   { yPercent: 0 ,duration: 0.5,})
 
   gsap.to(".glock",   { xPercent: 0 ,duration: 0.5,})
 
@@ -79,6 +79,8 @@ Blue.onclick = () =>{
 
     <img src=${bluemag}  class="mag piece" alt="mag">
     `
+
+    document.getElementsByClassName('Heading')[0].style.color ="#6c87a1"
   } else {
     alert('Assemble first')
   }
@@ -96,8 +98,20 @@ Black.onclick = () =>{
 
     <img src=${blackmag}  class="mag piece" alt="mag">
     `
+  
+    document.getElementsByClassName('Heading')[0].style.color ="#1e2022"
   } else {
     alert('Assemble first')
   }
 
 }
+var glock = document.getElementsByClassName('glock');
+
+glock[0].onclick = () =>{
+  const attribute = document.createAttribute('data-depth')
+  attribute.value = `0.5`
+  
+  glock.setAttributeNode(attribute)
+  console.log(glock[0])
+}
+

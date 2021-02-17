@@ -140,7 +140,7 @@ var _mag = _interopRequireDefault(require("../assets/images/mag.png"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Header = function Header() {
-  var template = "\n\n    <div class=\"container\">\n\n   <div class=\"holder\">\n\n    <div class=\"btngrp\">\n      <button id=\"break\"><h1>Strip</h1></button>\n      <button id=\"Assemble\"><h1>ASSEMBLE</h1></button>\n      <button id=\"reload\"><h1>LOAD</h1></button>\n      <h2>Select a color</h2>\n    <div class=\"btngrp2\">\n\n      <button id=\"blue\"></button>\n      <button id=\"black\"></button>\n    </div>\n\n   \n   </div>\n   <h1 class=\"Heading\">GLOCK 19X</h1>\n </div>\n\n    <div class=\"glock\">\n      <div id=\"slideHolder\" >\n    <img src=".concat(_slide.default, "  class=\"slide piece\"  alt=\"slide\">\n  </div>\n      <img src=\"https://assets.codepen.io/16327/teardown-barrel.png\" class=\"barrel piece\" alt=\"barrel\">\n      <img src=\"https://assets.codepen.io/16327/teardown-spring.png\" class=\"spring piece\" alt=\"spring\">\n      <img src=").concat(_base.default, " class=\"base piece\" alt=\"base\">\n    <div id=\"magholder\">\n      <img src=").concat(_mag.default, " class=\"mag piece\" alt=\"mag\">\n    </div>\n    </div>\n\n \n\n    </div>\n\n\n   \n  \n  ");
+  var template = "\n\n    <div class=\"container\">\n   \n\n\n   <div class=\"holder\" >\n\n    <div class=\"btngrp\" >\n      <button id=\"break\"><h1>Strip</h1></button>\n      <button id=\"Assemble\"><h1>ASSEMBLE</h1></button>\n      <button id=\"reload\"><h1>LOAD</h1></button>\n\n    <div class=\"btngrp2\"  >\n\n      <button id=\"blue\"></button>\n      <button id=\"black\"></button>\n    </div>\n\n   \n   </div>\n   <h1 class=\"Heading\" >GLOCK 19X</h1>\n </div>\n\n    <div class=\"glock\"  data-depth=\"0.1\">\n      <div id=\"slideHolder\" >\n    <img src=".concat(_slide.default, "  class=\"slide piece\"  alt=\"slide\">\n  </div>\n      <img src=\"https://assets.codepen.io/16327/teardown-barrel.png\" class=\"barrel piece\" alt=\"barrel\">\n      <img src=\"https://assets.codepen.io/16327/teardown-spring.png\" class=\"spring piece\" alt=\"spring\">\n      <img src=").concat(_base.default, " class=\"base piece\" alt=\"base\">\n    <div id=\"magholder\">\n      <img src=").concat(_mag.default, " class=\"mag piece\" alt=\"mag\">\n    </div>\n    </div>\n\n \n\n    </div>\n\n\n   \n  \n  ");
   return template;
 };
 
@@ -277,7 +277,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43809" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45005" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

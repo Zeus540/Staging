@@ -8,15 +8,17 @@ const Header = () => {
 	const template = `
 
     <div class="container">
+   
 
-   <div class="holder">
 
-    <div class="btngrp">
+   <div class="holder" >
+
+    <div class="btngrp" >
       <button id="break"><h1>Strip</h1></button>
       <button id="Assemble"><h1>ASSEMBLE</h1></button>
       <button id="reload"><h1>LOAD</h1></button>
-      <h2>Select a color</h2>
-    <div class="btngrp2">
+
+    <div class="btngrp2"  >
 
       <button id="blue"></button>
       <button id="black"></button>
@@ -24,10 +26,10 @@ const Header = () => {
 
    
    </div>
-   <h1 class="Heading">GLOCK 19X</h1>
+   <h1 class="Heading" >GLOCK 19X</h1>
  </div>
 
-    <div class="glock">
+    <div class="glock"  data-depth="0.1">
       <div id="slideHolder" >
     <img src=${Slide}  class="slide piece"  alt="slide">
   </div>

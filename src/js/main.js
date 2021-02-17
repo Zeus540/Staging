@@ -1,1 +1,2 @@
-import '../js/scrollMagic'
+import './scrollMagic'
+import './parallax'
