@@ -10,7 +10,7 @@ const Header = () => {
     <div class="container">
 
 
-  <h1 class="Heading">GLOCK 19</h1>
+  <h1 class="Heading">GLOCK 19X</h1>
     <div class="glock">
       <div id="slideHolder" >
     <img src=${Slide}  class="slide piece"  alt="slide">

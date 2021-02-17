@@ -26,7 +26,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-height: 100vh;
+  max-height: 85vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,9 +87,34 @@ h1 {
 #slideHolder {
   width: 99%;
   position: relative;
-  z-index: 2;
+  z-index: 3;
   left: -0.9vw;
-  top: 9.6vw;
+  top: 7.2vw;
+}
+@media (min-width: 1px) and (max-width: 425px) {
+  #slideHolder {
+    top: 15.7vw;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  #slideHolder {
+    top: 14.5vw;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  #slideHolder {
+    top: 14.3vw;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  #slideHolder {
+    top: 12.9vw;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1920px) {
+  #slideHolder {
+    top: 9.6vw;
+  }
 }
 
 .slide {
@@ -100,9 +125,33 @@ h1 {
 
 .barrel {
   width: 54.25%;
-  /* left: 7.5%; */
   position: relative;
-  top: 4.5vw;
+  top: 2.3vw;
+}
+@media (min-width: 1px) and (max-width: 425px) {
+  .barrel {
+    top: 5vw;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .barrel {
+    top: 4.5vw;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .barrel {
+    top: 4.5vw;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .barrel {
+    top: 4vw;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .barrel {
+    top: 3.2vw;
+  }
 }
 
 .spring {
@@ -133,7 +182,6 @@ h1 {
 }
 
 .btngrp {
-  position: absolute;
   bottom: 0.5vw;
   width: 100%;
   display: -webkit-box;
@@ -152,6 +200,31 @@ h1 {
   background: #1e2022;
   border: none;
   color: white;
+}
+@media (min-width: 1px) and (max-width: 425px) {
+  .btngrp button {
+    font-size: 1.8vw;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .btngrp button {
+    font-size: 1.5vw;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .btngrp button {
+    font-size: 1vw;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .btngrp button {
+    font-size: 1vw;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .btngrp button {
+    font-size: 0.6vw;
+  }
 }
 .btngrp button:nth-child(2) {
   padding: 0.5vw 0.5vw;

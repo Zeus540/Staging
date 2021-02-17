@@ -12799,7 +12799,7 @@ Break.onclick = function () {
   });
 
   _gsap.gsap.to(".barrel", {
-    yPercent: -115,
+    yPercent: -90,
     duration: 0.5
   });
 
@@ -12825,6 +12825,11 @@ Break.onclick = function () {
 
   _gsap.gsap.to(".glock", {
     yPercent: -40,
+    duration: 0.5
+  });
+
+  _gsap.gsap.to(".glock", {
+    xPercent: -80,
     duration: 0.5
   });
 
@@ -12867,6 +12872,11 @@ Assemble.onclick = function () {
     duration: 0.5
   });
 
+  _gsap.gsap.to(".glock", {
+    xPercent: -50,
+    duration: 0.5
+  });
+
   State = true;
 };
 
@@ -12874,11 +12884,6 @@ reload.onclick = function () {
   if (State === true) {
     _gsap.gsap.from(".slide", {
       xPercent: 20,
-      duration: 0.5
-    });
-
-    _gsap.gsap.from(".barrel", {
-      xPercent: 31,
       duration: 0.5
     });
 

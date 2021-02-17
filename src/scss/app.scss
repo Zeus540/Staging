@@ -24,7 +24,7 @@ ul {
 overflow: hidden;
 align-items: center;
 flex-direction: column;
-max-height: 100vh;
+max-height: 85vh;
 display: flex;
 height: 100vh;
 position: relative;
@@ -81,10 +81,24 @@ h1{
   #slideHolder {
 	width: 99%;
     position: relative;
-    z-index: 2;
+    z-index: 3;
     left: -0.9vw;
-    top: 9.6vw;
-
+	top: 7.2vw;
+	@media(min-width:1px) and (max-width:425px){
+		top: 15.7vw;
+	}
+	@media(min-width:426px) and (max-width:768px){
+	    top: 14.5vw;
+	}
+	@media(min-width:769px) and (max-width:1024px){
+		top: 14.3vw;
+	}
+	@media(min-width:1025px) and (max-width:1440px){
+		top: 12.9vw;
+	}
+	@media(min-width:1441px) and (max-width:1920px){
+		top: 9.6vw;
+	}
   }
   .slide {
     width: 100%;
@@ -94,10 +108,23 @@ h1{
   }
   .barrel {
     width: 54.25%;
-    /* left: 7.5%; */
     position: relative;
-    top: 4.5vw;
-
+	top: 2.3vw;
+	@media(min-width:1px) and (max-width:425px){
+		top: 5vw;
+	}
+	@media(min-width:426px) and (max-width:768px){
+		top: 4.5vw;
+	}
+	@media(min-width:769px) and (max-width:1024px){
+	    top: 4.5vw;
+	}
+	@media(min-width:1025px) and (max-width:1440px){
+		top: 4vw;
+	}
+	@media(min-width:1441px) and (max-width:1920px){
+		top: 3.2vw;
+	}
   }
   .spring {
 	width: 40.333%;
@@ -126,7 +153,7 @@ h1{
 	  height: 100vh;
   }
   .btngrp{
-	position: absolute;
+
     bottom: 0.5vw;
     width: 100%;
     display: flex;
@@ -139,6 +166,21 @@ h1{
 		background: #1e2022;
 		border: none;
 		color: white;
+		@media(min-width:1px) and (max-width:425px){
+			font-size: 1.8vw;
+		}
+		@media(min-width:426px) and (max-width:768px){
+			font-size: 1.5vw;
+		}
+		@media(min-width:769px) and (max-width:1024px){
+			font-size: 1vw;
+		}
+		@media(min-width:1025px) and (max-width:1440px){
+			font-size: 1vw;
+		}
+		@media(min-width:1441px) and (max-width:1920px){
+			font-size: 0.6vw;
+		}
 	}
 	button:nth-child(2){
 		padding: 0.5vw 0.5vw;

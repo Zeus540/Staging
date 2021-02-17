@@ -23,7 +23,7 @@ Break.onclick = () =>{
  
   gsap.to(".slide",  { yPercent:  -135 ,duration: 0.5,})
 
-  gsap.to(".barrel", { yPercent: -115 ,duration: 0.5, })
+  gsap.to(".barrel", { yPercent: -90 ,duration: 0.5, })
  
   gsap.to(".spring", { yPercent: -100 ,duration: 0.5,})
 
@@ -34,6 +34,8 @@ Break.onclick = () =>{
   gsap.to(".mag",   { xPercent: 180 ,duration: 0.5,})
 
   gsap.to(".glock",   { yPercent: -40 ,duration: 0.5,})
+
+  gsap.to(".glock",   { xPercent: -80 ,duration: 0.5,})
 
   State = false;
 }
@@ -48,7 +50,7 @@ Assemble.onclick = () =>{
   gsap.to(".mag",   { yPercent: 0 ,duration: 0.5,})
   gsap.to(".mag",   { xPercent: 0 ,duration: 0.5,})
   gsap.to(".glock",   { yPercent:  -50  ,duration: 0.5,})
-
+  gsap.to(".glock",   { xPercent: -50 ,duration: 0.5,})
   State = true;
 }
 
@@ -58,7 +60,7 @@ reload.onclick = () =>{
 
 if (  State === true) {
   gsap.from(".slide",  { xPercent: 20,duration: 0.5 })
-  gsap.from(".barrel", { xPercent: 31,duration: 0.5})
+
   gsap.from(".spring", { xPercent: 40,duration: 0.5 })
 } else {
   alert('Assemble first')
