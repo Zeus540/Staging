@@ -29,9 +29,9 @@ Break.onclick = () =>{
 
   gsap.to(".base",   { yPercent: 0 ,duration: 0.5,})
 
-  gsap.to(".mag",   { yPercent: -50 ,duration: 0.5,})
+  gsap.to(".mag",   { yPercent: 12 ,duration: 0.5,})
 
-  gsap.to(".mag",   { xPercent: 180 ,duration: 0.5,})
+  gsap.to(".mag",   { xPercent: -150 ,duration: 0.5,})
 
   gsap.to(".glock",   { yPercent: 0 ,duration: 0.5,})
 
@@ -104,14 +104,5 @@ Black.onclick = () =>{
     alert('Assemble first')
   }
 
-}
-var glock = document.getElementsByClassName('glock');
-
-glock[0].onclick = () =>{
-  const attribute = document.createAttribute('data-depth')
-  attribute.value = `0.5`
-  
-  glock.setAttributeNode(attribute)
-  console.log(glock[0])
 }
 
