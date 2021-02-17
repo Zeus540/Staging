@@ -33,9 +33,9 @@ Break.onclick = () =>{
 
   gsap.to(".mag",   { xPercent: 180 ,duration: 0.5,})
 
-  gsap.to(".glock",   { yPercent: -40 ,duration: 0.5,})
+  gsap.to(".glock",   { yPercent: 20 ,duration: 0.5,})
 
-  gsap.to(".glock",   { xPercent: -80 ,duration: 0.5,})
+  gsap.to(".glock",   { xPercent: 0 ,duration: 0.5,})
 
   State = false;
 }
@@ -49,8 +49,8 @@ Assemble.onclick = () =>{
   gsap.to(".base",   { yPercent: 0 ,duration: 0.5,})
   gsap.to(".mag",   { yPercent: 0 ,duration: 0.5,})
   gsap.to(".mag",   { xPercent: 0 ,duration: 0.5,})
-  gsap.to(".glock",   { yPercent:  -50  ,duration: 0.5,})
-  gsap.to(".glock",   { xPercent: -50 ,duration: 0.5,})
+  gsap.to(".glock",   { yPercent:  0  ,duration: 0.5,})
+  gsap.to(".glock",   { xPercent: 0 ,duration: 0.5,})
   State = true;
 }
 

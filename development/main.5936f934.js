@@ -12824,12 +12824,12 @@ Break.onclick = function () {
   });
 
   _gsap.gsap.to(".glock", {
-    yPercent: -40,
+    yPercent: 20,
     duration: 0.5
   });
 
   _gsap.gsap.to(".glock", {
-    xPercent: -80,
+    xPercent: 0,
     duration: 0.5
   });
 
@@ -12868,12 +12868,12 @@ Assemble.onclick = function () {
   });
 
   _gsap.gsap.to(".glock", {
-    yPercent: -50,
+    yPercent: 0,
     duration: 0.5
   });
 
   _gsap.gsap.to(".glock", {
-    xPercent: -50,
+    xPercent: 0,
     duration: 0.5
   });
 

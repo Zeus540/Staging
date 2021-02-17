@@ -9,8 +9,24 @@ const Header = () => {
 
     <div class="container">
 
+   <div class="holder">
 
-  <h1 class="Heading">GLOCK 19X</h1>
+    <div class="btngrp">
+      <button id="break"><h1>Strip</h1></button>
+      <button id="Assemble"><h1>ASSEMBLE</h1></button>
+      <button id="reload"><h1>LOAD</h1></button>
+      <h2>Select a color</h2>
+    <div class="btngrp2">
+
+      <button id="blue"></button>
+      <button id="black"></button>
+    </div>
+
+   
+   </div>
+   <h1 class="Heading">GLOCK 19X</h1>
+ </div>
+
     <div class="glock">
       <div id="slideHolder" >
     <img src=${Slide}  class="slide piece"  alt="slide">
@@ -22,15 +38,14 @@ const Header = () => {
       <img src=${Mag} class="mag piece" alt="mag">
     </div>
     </div>
-    </div>
-  <div class="btngrp">
-    <button id="break"><h1>Strip</h1></button>
-    <button id="reload"><h1>LOAD</h1></button>
 
-    <button id="Assemble"><h1>ASSEMBLE</h1></button>
-    <button id="blue"></button>
-    <button id="black"></button>
-  </div>
+ 
+
+    </div>
+
+
+   
+  
   `;
 
 	return template;
